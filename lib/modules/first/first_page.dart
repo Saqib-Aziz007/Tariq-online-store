@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import '../../utils/utils.dart';
+import '../../widgets/general_exception_widget.dart';
 import 'first_controller.dart';
 
 class FirstPage extends StatelessWidget {
@@ -7,19 +9,18 @@ class FirstPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetX<FirstController>(
-        builder: (controller) => Scaffold(
-              appBar: AppBar(
-                title: const Text("Getx Counter App"),
-              ),
-              body: Center(
-                child: Column(children: [
-                  Text("Counter: ${controller.counter}"),
-                  FloatingActionButton.extended(
-                      onPressed: () => controller.onButtonClicked(),
-                      label: const Text("Add"))
-                ]),
-              ),
-            ));
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Home'.tr),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => Utils.showLanguageDialog(context),
+        child: const Icon(Icons.g_translate_sharp),
+      ),
+      body: GeneralExceptionWidget(
+        exceptionMessage: 'No internet'.tr,
+        onPress: () {},
+      ),
+    );
   }
 }
