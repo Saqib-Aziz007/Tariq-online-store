@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
 import '../../utils/utils.dart';
 import '../../widgets/general_exception_widget.dart';
-import 'first_controller.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage({super.key});
@@ -11,7 +11,10 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'.tr),
+        title: Text(
+          'Home'.tr,
+          style: Theme.of(context).textTheme.displayMedium,
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => Utils.showLanguageDialog(context),

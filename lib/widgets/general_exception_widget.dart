@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../constants/app_colors.dart';
-import '../constants/text_styles.dart';
 
 class GeneralExceptionWidget extends StatefulWidget {
-  const GeneralExceptionWidget({Key? key,this.onPress, required this.exceptionMessage}) : super(key: key);
+  const GeneralExceptionWidget(
+      {Key? key, this.onPress, required this.exceptionMessage})
+      : super(key: key);
 
   final void Function()? onPress;
   final String exceptionMessage;
 
   @override
-  State<GeneralExceptionWidget> createState() =>
-      _GeneralExceptionWidgetState();
+  State<GeneralExceptionWidget> createState() => _GeneralExceptionWidgetState();
 }
 
 class _GeneralExceptionWidgetState extends State<GeneralExceptionWidget> {
@@ -35,7 +35,7 @@ class _GeneralExceptionWidgetState extends State<GeneralExceptionWidget> {
             child: Center(
               child: Text(
                 'No internet'.tr,
-                style: kHeading1,
+                style: Theme.of(context).textTheme.headlineLarge,
               ),
             ),
           ),
@@ -46,7 +46,7 @@ class _GeneralExceptionWidgetState extends State<GeneralExceptionWidget> {
               onPressed: () {},
               child: Text(
                 'Retry'.tr,
-                style: kHeading1,
+                style: Theme.of(context).textTheme.headlineLarge,
               ))
         ],
       ),

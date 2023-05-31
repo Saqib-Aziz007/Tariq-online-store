@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_mvvm_template/theme/color_schemes.g.dart';
+import 'package:flutter_getx_mvvm_template/theme/typography.dart';
 import 'package:get/get.dart';
+
 import 'localization/language_translations.dart';
 import 'routes/app_pages.dart';
 import 'routes/app_routes.dart';
@@ -17,11 +20,18 @@ class MyApp extends StatelessWidget {
       title: 'Boilerplate Getx MVVM Template',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        colorScheme: lightColorScheme,
+        textTheme: textTheme,
       ),
+      darkTheme: ThemeData(
+        useMaterial3: true,
+        colorScheme: darkColorScheme,
+        textTheme: textTheme,
+      ),
+      themeMode: ThemeMode.light,
       translations: LanguageTranslations(),
-      locale: const Locale('en','US'),
+      locale: const Locale('en', 'US'),
       initialRoute: AppRoutes.initial,
       getPages: AppPages.pages,
     );
