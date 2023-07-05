@@ -1,10 +1,6 @@
 import 'package:get/get.dart';
 
-import '../../services/logger_service/logger_service.dart';
-
-class LoginController extends GetxController {
-  final _logger = Get.find<LoggerService>();
-
+class HomeController extends GetxController {
   @override
   void onInit() {
     // Initialization

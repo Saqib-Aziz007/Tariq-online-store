@@ -12,6 +12,11 @@ class LanguageTranslations extends Translations {
           'Home': 'ھوم',
           'No internet': 'انٹرنیٹ موجود نہیں',
           'Retry': 'دوبارہ کوشش کریں'
+        },
+        'Ar': {
+          'Home': 'ھوم',
+          'No internet': 'انٹرنیٹ موجود نہیں',
+          'Retry': 'دوبارہ کوشش کریں'
         }
       };
 }

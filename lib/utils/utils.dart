@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 
 import '../constants/constants.dart';
@@ -9,7 +10,6 @@ class Utils {
     current.unfocus();
     FocusScope.of(context).requestFocus(nextFocus);
   }
-
 
   static showLanguageDialog(BuildContext context) {
     showDialog(
@@ -45,5 +45,17 @@ class Utils {
             ),
           );
         });
+  }
+
+  static showToast(text) {
+    Fluttertoast.showToast(
+      msg: text,
+      toastLength: Toast.LENGTH_SHORT,
+      gravity: ToastGravity.TOP,
+      timeInSecForIosWeb: 1,
+      backgroundColor: Colors.red,
+      textColor: Colors.white,
+      fontSize: 16.0,
+    );
   }
 }

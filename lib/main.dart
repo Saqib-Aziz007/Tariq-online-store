@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_mvvm_template/constants/app_colors.dart';
 import 'package:flutter_getx_mvvm_template/theme/color_schemes.g.dart';
 import 'package:flutter_getx_mvvm_template/theme/typography.dart';
 import 'package:get/get.dart';
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         colorScheme: lightColorScheme,
         textTheme: textTheme,
+        scaffoldBackgroundColor: AppColors.primary,
       ),
       darkTheme: ThemeData(
         useMaterial3: true,
