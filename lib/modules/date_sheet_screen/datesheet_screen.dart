@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_getx_mvvm_template/constants/app_colors.dart';
 import 'package:flutter_getx_mvvm_template/constants/constants.dart';
 import 'package:flutter_getx_mvvm_template/modules/date_sheet_screen/datesheet_screen_controller.dart';
-import 'package:flutter_getx_mvvm_template/widgets/CustomDesignScaffold.dart';
+import 'package:flutter_getx_mvvm_template/widgets/custom_design_scaffold.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
 class DateSheetScreen extends GetView<DateSheetScreenController> {
-  DateSheetScreen({super.key});
+  const DateSheetScreen({super.key});
 
-  final _dateSheetController = Get.put(DateSheetScreenController());
+  // final _dateSheetController = Get.put(DateSheetScreenController());
 
   @override
   Widget build(BuildContext context) {

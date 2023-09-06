@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_getx_mvvm_template/constants/constants.dart';
 import 'package:flutter_getx_mvvm_template/modules/quiz_screen/quiz_screen_controller.dart';
-import 'package:flutter_getx_mvvm_template/widgets/CustomDesignScaffold.dart';
+import 'package:flutter_getx_mvvm_template/widgets/custom_design_scaffold.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 

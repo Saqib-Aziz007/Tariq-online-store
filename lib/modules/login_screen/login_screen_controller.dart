@@ -5,10 +5,9 @@ import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../routes/app_routes.dart';
-import '../../services/logger_service/logger_service.dart';
 
 class LoginController extends GetxController {
-  final _logger = Get.find<LoggerService>();
+  // final _logger = Get.find<LoggerService>();
   final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
   final loginFormKey = GlobalKey<FormState>();
   final usernameTextController = TextEditingController().obs;

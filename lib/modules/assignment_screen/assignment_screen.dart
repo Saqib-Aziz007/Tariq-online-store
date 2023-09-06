@@ -7,9 +7,9 @@ import 'package:intl/intl.dart';
 import '../../constants/app_colors.dart';
 
 class AssignmentScreen extends GetView<AssignmentScreenController> {
-  AssignmentScreen({super.key});
+  const AssignmentScreen({super.key});
 
-  final _assignmentController = Get.put(AssignmentScreenController());
+  // final _assignmentController = Get.put(AssignmentScreenController());
 
   @override
   Widget build(BuildContext context) {

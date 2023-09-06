@@ -8,9 +8,9 @@ import 'package:intl/intl.dart';
 import '../../constants/app_colors.dart';
 
 class FeeScreen extends GetView<FeeScreenController> {
-  FeeScreen({super.key});
+  const FeeScreen({super.key});
 
-  final _feeController = Get.put(FeeScreenController());
+  // final _feeController = Get.put(FeeScreenController());
 
   @override
   Widget build(BuildContext context) {

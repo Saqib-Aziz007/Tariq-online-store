@@ -7,9 +7,9 @@ import 'package:flutter_getx_mvvm_template/routes/app_routes.dart';
 import 'package:get/get.dart';
 
 class HomeScreen extends GetView<HomeController> {
-  HomeScreen({super.key});
+  const HomeScreen({super.key});
 
-  final _homeController = Get.put(HomeController());
+  // final _homeController = Get.put(HomeController());
 
   @override
   Widget build(BuildContext context) {

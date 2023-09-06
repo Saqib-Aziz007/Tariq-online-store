@@ -34,7 +34,7 @@ class AppPages {
     ),
     GetPage(
       name: AppRoutes.homeScreen,
-      page: () => HomeScreen(),
+      page: () => const HomeScreen(),
       binding: HomeScreenBinding(),
     ),
     GetPage(
@@ -44,17 +44,17 @@ class AppPages {
     ),
     GetPage(
       name: AppRoutes.assignmentsScreen,
-      page: () => AssignmentScreen(),
+      page: () => const AssignmentScreen(),
       binding: AssignmentBindings(),
     ),
     GetPage(
       name: AppRoutes.feeScreen,
-      page: () => FeeScreen(),
+      page: () => const FeeScreen(),
       binding: FeeScreenBindings(),
     ),
     GetPage(
       name: AppRoutes.dateSheetScreen,
-      page: () => DateSheetScreen(),
+      page: () => const DateSheetScreen(),
       binding: DateSheetScreenBindings(),
     ),
     GetPage(
